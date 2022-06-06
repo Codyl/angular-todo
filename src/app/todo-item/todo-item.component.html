@@ -1,0 +1,6 @@
+<div>
+  <span>Task {{ taskNumber }}.) </span>
+  <input type="checkbox" name="" id="" [(ngModel)]="todoDone" />
+  <span [ngClass]="{ completed: todoDone }">{{ todoName }}</span>
+  <button class="deleteBtn" (click)="onDeleteTodo()">X</button>
+</div>

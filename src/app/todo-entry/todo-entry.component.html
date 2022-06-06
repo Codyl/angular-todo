@@ -1,0 +1,5 @@
+<div>
+  <span>Enter your todo Item:</span>
+  <input type="text" [(ngModel)]="todoName" />
+  <button (click)="onCreateTodo()" [disabled]="!todoName">Add todo</button>
+</div>
